@@ -1,10 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "t9aVc29ueAm7PyHfEYqp5XiEOS2C2ImQV5fP0TE48Y4AE1jzO+yKx4rqSFv4EOb4AShBt/nAqrvjY+YInJpSig==",
+  "dgSpecHash": "QJMeMb2SgVm1uuJvqv+//u8v1swn2vVQGlPWLXXrIOL0Jnrp243B0OysQaJMCWvBSipbq1XhGK6tuy9xvpEsIA==",
   "success": true,
   "projectFilePath": "/Users/farukakyol/Projects/SeleniumWithCSharp/SeleniumWithCSharp/SeleniumWithCSharp.csproj",
   "expectedPackageFiles": [
     "/Users/farukakyol/.nuget/packages/coverlet.collector/3.1.2/coverlet.collector.3.1.2.nupkg.sha512",
+    "/Users/farukakyol/.nuget/packages/microsoft.bcl.asyncinterfaces/6.0.0/microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
+    "/Users/farukakyol/.nuget/packages/microsoft.bcl.timeprovider/8.0.0/microsoft.bcl.timeprovider.8.0.0.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/microsoft.codecoverage/17.1.0/microsoft.codecoverage.17.1.0.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/microsoft.csharp/4.0.1/microsoft.csharp.4.0.1.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/microsoft.net.test.sdk/17.1.0/microsoft.net.test.sdk.17.1.0.nupkg.sha512",
@@ -18,6 +20,8 @@
     "/Users/farukakyol/.nuget/packages/nunit/3.13.3/nunit.3.13.3.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/nunit.analyzers/3.3.0/nunit.analyzers.3.3.0.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/nunit3testadapter/4.2.1/nunit3testadapter.4.2.1.nupkg.sha512",
+    "/Users/farukakyol/.nuget/packages/polly/8.4.1/polly.8.4.1.nupkg.sha512",
+    "/Users/farukakyol/.nuget/packages/polly.core/8.4.1/polly.core.8.4.1.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/selenium.support/4.24.0/selenium.support.4.24.0.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/selenium.webdriver/4.24.0/selenium.webdriver.4.24.0.nupkg.sha512",
     "/Users/farukakyol/.nuget/packages/system.collections/4.0.11/system.collections.4.0.11.nupkg.sha512",
