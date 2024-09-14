@@ -32,7 +32,7 @@ public class Tests
     {
         Console.WriteLine(SeleniumCustomMethods.GetTitle(_driver));
         var homePage = new HomePage(_driver);
-        Assert.IsTrue(homePage.IsSearchAreaVisible());
+        Assert.IsTrue(homePage.IsSearchAreaVisible().Item1);
         homePage.SearchKeywordOnGoogle(_keyword);
         
     }

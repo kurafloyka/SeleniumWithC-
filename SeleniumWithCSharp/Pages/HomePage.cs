@@ -23,9 +23,9 @@ namespace SeleniumWithCSharp.Pages
 
         }
 
-        public bool IsSearchAreaVisible()
+        public (bool,bool) IsSearchAreaVisible()
         {
-            return searchArea.Displayed;
+            return (searchArea.Displayed,searchArea.Enabled);
         }
     }
 }
