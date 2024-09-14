@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{B2224ECB-FE00-4694-956B-B3338F083EF4}|Default">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/farukakyol/Projects/SeleniumWithCSharp/SeleniumWithCSharp/UnitTest1.cs" relfile="SeleniumWithCSharp/UnitTest1.cs" line="35" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.Workbench ActiveDocument="SeleniumWithCSharp/UnitTest1.cs">
+    <Files>
+      <File FileName="SeleniumWithCSharp/SeleniumCustomMethods.cs" Line="25" Column="43" IsPinned="True" />
+      <File FileName="SeleniumWithCSharp/UnitTest1.cs" Line="45" Column="6" />
+      <File FileName="SeleniumWithCSharp/Pages/HomePage.cs" Line="22" Column="40" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SeleniumWithCSharp" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SeleniumWithCSharp">
+            <Node name="SeleniumWithCSharp">
+              <Node name="SeleniumWithCSharp">
+                <Node name="Tests(&quot;https://google.com&quot;,&quot;selenium&quot;)">
+                  <Node name="CustomMethodImplWithPOM - 3d99225a-ce50-ad59-99ec-d12e0d29e60a" selected="True" />
+                </Node>
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.SeleniumWithCSharp PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
