@@ -22,6 +22,11 @@ namespace SeleniumWithCSharp.Pages
             searchArea.SendKeysElement( Keys.Enter);
 
         }
+
+        public bool IsSearchAreaVisible()
+        {
+            return searchArea.Displayed;
+        }
     }
 }
 
