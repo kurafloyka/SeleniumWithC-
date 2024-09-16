@@ -22,6 +22,7 @@ public class Tests
     {
 
         _driver = new ChromeDriver();
+        _driver.Manage().Timeouts().ImplicitWait = TimeSpan.FromSeconds(10);
         SeleniumCustomMethods.MaximizeWindow(_driver);
         SeleniumCustomMethods.NavigateToUrl(_driver, _url);
 
@@ -43,6 +44,13 @@ public class Tests
     public void TestBrowserVersion(string browser,string version)
     {
         Console.WriteLine($"Browser : {browser}");
+
+        var btn = _driver.FindElement(By.CssSelector("#login_button"), 10);
+        btn.Click();
+        var employeeLabel = _driver.FindElement(By.CssSelector("#VCC_VSL"), 10);
+        Assert.AreEqual("Employee", employeeLabel.Text);
+
+
     }
 
     [TearDown]

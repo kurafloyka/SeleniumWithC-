@@ -44,6 +44,16 @@ namespace SeleniumWithCSharp
             driver.Navigate().GoToUrl(url);
         }
 
+        public static IWebElement FindElement(this IWebDriver driver, By by, int timeoutInSeconds)
+        {
+            if (timeoutInSeconds > 0)
+            {
+                var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutInSeconds));
+                return wait.Until(drv => drv.FindElement(by));
+            }
+            return driver.FindElement(by);
+        }
+
         public static void SelectDropDownByText(this IWebElement locator, string text)
         {
             var selectElement = new SelectElement(locator);
