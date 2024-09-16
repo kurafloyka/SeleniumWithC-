@@ -40,9 +40,20 @@ namespace SeleniumWithCSharp.Pages
             return successMessageForRecord.Displayed;
         }
 
+        public bool IsRecordAddSuccessfullyWithGreenMessage(string style)
+        {
+            return successMessageForRecord.GetAttribute("style").Equals(style);
+        }
+
         public (bool,bool) EmptyCheckField()
         {
             return (nameIsRequiredField.Displayed,surnameIsRequiredField.Displayed);
+        }
+
+        //TODO date format should be check.
+        public (bool,bool) EntriedValueIntoEmailAndBirthdate(string email,string birthdate)
+        {
+            return (emailInput.GetAttribute("value").Contains(email), birthdateInput.GetAttribute("value").Contains(birthdate));
         }
     }
 

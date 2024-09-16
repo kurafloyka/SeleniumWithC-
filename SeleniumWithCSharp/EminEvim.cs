@@ -54,6 +54,26 @@ public class Tests1
         Assert.IsTrue(kayitPage.EmptyCheckField().Item2);
     }
 
+    [Test]
+    public void EntriedValueIntoEmailAndBirthdateTest()
+    {
+        var kayitPage = new KayitPage(_driver);
+        kayitPage.FillRecordForm("", "", _email, _birthdate);
+
+        Assert.IsTrue(kayitPage.EntriedValueIntoEmailAndBirthdate(_email,_birthdate).Item1);
+        Assert.IsTrue(kayitPage.EntriedValueIntoEmailAndBirthdate(_email, _birthdate).Item2);
+
+    }
+
+
+
+    [Test]
+    public void IsRecordAddSuccessfullyWithGreenMessageTest()
+    {
+        var kayitPage = new KayitPage(_driver);
+        kayitPage.FillRecordForm(_name, _surname, _email, _birthdate);
+        kayitPage.IsRecordAddSuccessfullyWithGreenMessage("color:Green;");
+    }
 
 
     [TearDown]
