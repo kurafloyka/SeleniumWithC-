@@ -20,6 +20,10 @@ namespace SeleniumWithCSharp.Pages
         IWebElement successMessageForRecord => driver.FindElement(By.Id("lblResult"));
 
 
+        IWebElement nameIsRequiredField => driver.FindElement(By.Id("rfvAdi"));
+        IWebElement surnameIsRequiredField => driver.FindElement(By.Id("RequiredFieldValidator1"));
+
+
         public void FillRecordForm(string name, string surname, string email, string birthdate)
         {
             Assert.IsTrue(recordFormHeader.Displayed);
@@ -34,6 +38,11 @@ namespace SeleniumWithCSharp.Pages
         public bool IsRecordAddSuccessfully()
         {
             return successMessageForRecord.Displayed;
+        }
+
+        public (bool,bool) EmptyCheckField()
+        {
+            return (nameIsRequiredField.Displayed,surnameIsRequiredField.Displayed);
         }
     }
 

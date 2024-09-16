@@ -44,7 +44,17 @@ public class Tests1
         
     }
 
-   
+    [Test]
+    public void EmptyFieldTestForNameAndSurname()
+    {
+        var kayitPage = new KayitPage(_driver);
+        kayitPage.FillRecordForm("", "", _email, _birthdate);
+
+        Assert.IsTrue(kayitPage.EmptyCheckField().Item1);
+        Assert.IsTrue(kayitPage.EmptyCheckField().Item2);
+    }
+
+
 
     [TearDown]
     public void TearDown()
